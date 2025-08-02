@@ -41,4 +41,5 @@ This project is part of a data analyst training initiative and aims to provide h
 - sample queries are given in the "Library workout" file
 
 ## Screenshot
+![image alt](https://github.com/MithinRC/Library-Management-Subsystem/blob/78afa5b9d765fdd562b9e1874860e4cc812426ac/1752495310076.jpg)
 ![image alt](

@@ -1,0 +1,203 @@
+create database library;
+create table Books;
+create table IssueReturned;
+create table Users;
+
+
+Creating Books Table:
+
+INSERT INTO Books (BookID, Title, Author, Category, Price, Status) VALUES 
+(1, 'Data Structures', 'Dr. Alan Turing', 'CSE', 499.50, 'Available'),
+(2, 'Operating Systems', 'Andrew Tanenbaum', 'CSE', 599.00, 'Issued'),
+(3, 'Data Science', 'Cathy O\'Neil', 'CSE', 850.00, 'Available'),
+(4, 'Machine Learning', 'Tom Mitchell', 'CSE', 925.75, 'Available'),
+(5, 'Artificial Intelligence', 'Stuart Russell', 'CSE', 999.00, 'Issued'),
+(6, 'Computer Networks', 'James Kurose', 'CSE', 450.25, 'Available'),
+(7, 'Python Programming', 'Mark Lutz', 'CSE', 375.90, 'Available'),
+(8, 'Database Systems', 'Raghu Ramakrishnan', 'CSE', 675.00, 'Issued'),
+
+(9, 'Digital Circuits', 'Sedra Smith', 'ECE', 540.00, 'Available'),
+(10, 'Communication Systems', 'Simon Haykin', 'ECE', 620.40, 'Available'),
+(11, 'Microprocessors', 'Barry B. Brey', 'ECE', 780.00, 'Issued'),
+(12, 'Embedded Systems', 'Raj Kamal', 'ECE', 715.20, 'Available'),
+(13, 'Signal Processing', 'Alan V. Oppenheim', 'ECE', 890.00, 'Issued'),
+(14, 'Analog Electronics', 'Robert Boylestad', 'ECE', 465.00, 'Available'),
+(15, 'Control Systems', 'Benjamin Kuo', 'ECE', 555.50, 'Available'),
+
+(16, 'Power Systems', 'C.L. Wadhwa', 'EEE', 630.30, 'Available'),
+(17, 'Electrical Machines', 'D.P. Kothari', 'EEE', 699.99, 'Issued'),
+(18, 'Circuit Theory', 'Charles Alexander', 'EEE', 580.45, 'Available'),
+(19, 'Energy Conversion', 'B.L. Theraja', 'EEE', 475.75, 'Available'),
+(20, 'Electromagnetics', 'William Hayt', 'EEE', 710.00, 'Issued'),
+(21, 'Instrumentation', 'A.K. Sawhney', 'EEE', 650.00, 'Available'),
+
+(22, 'Thermodynamics', 'Yunus Cengel', 'MECH', 699.00, 'Issued'),
+(23, 'Fluid Mechanics', 'Frank White', 'MECH', 580.60, 'Available'),
+(24, 'Manufacturing Technology', 'P.N. Rao', 'MECH', 520.00, 'Available'),
+(25, 'Dynamics of Machines', 'Rattan S.S.', 'MECH', 465.50, 'Issued'),
+(26, 'Machine Design', 'Shigley', 'MECH', 799.95, 'Available'),
+(27, 'Heat Transfer', 'J.P. Holman', 'MECH', 545.00, 'Available'),
+
+(28, 'Structural Analysis', 'R.C. Hibbeler', 'CIVIL', 689.50, 'Issued'),
+(29, 'Construction Technology', 'S.P. Arora', 'CIVIL', 550.00, 'Available'),
+(30, 'Soil Mechanics', 'K.R. Arora', 'CIVIL', 470.80, 'Available'),
+(31, 'Hydraulics', 'Modi & Seth', 'CIVIL', 615.00, 'Issued'),
+(32, 'Transportation Engineering', 'L.R. Kadiyali', 'CIVIL', 580.60, 'Available'),
+(33, 'Concrete Technology', 'M.S. Shetty', 'CIVIL', 655.00, 'Available'),
+
+(34, 'Biochemistry', 'Lehninger', 'BIO', 745.20, 'Available'),
+(35, 'Molecular Biology', 'Watson', 'BIO', 800.00, 'Issued'),
+(36, 'Genetics', 'Snustad', 'BIO', 695.00, 'Available'),
+(37, 'Microbiology', 'Prescott', 'BIO', 590.45, 'Available'),
+(38, 'Cell Biology', 'Alberts', 'BIO', 710.00, 'Issued'),
+(39, 'Immunology', 'Kuby', 'BIO', 635.30, 'Available'),
+
+(40, 'Organic Chemistry', 'Morrison & Boyd', 'CHEM', 625.00, 'Available'),
+(41, 'Inorganic Chemistry', 'J.D. Lee', 'CHEM', 565.00, 'Issued'),
+(42, 'Physical Chemistry', 'Atkins', 'CHEM', 700.00, 'Available'),
+(43, 'Analytical Chemistry', 'Skoog', 'CHEM', 599.99, 'Available'),
+(44, 'Environmental Chemistry', 'B.K. Sharma', 'CHEM', 485.75, 'Available'),
+
+(45, 'Quantum Mechanics', 'Griffiths', 'PHYS', 799.00, 'Issued'),
+(46, 'Electromagnetism', 'David J. Griffiths', 'PHYS', 680.40, 'Available'),
+(47, 'Classical Mechanics', 'Goldstein', 'PHYS', 610.20, 'Available'),
+(48, 'Thermal Physics', 'Zemansky', 'PHYS', 550.00, 'Available'),
+(49, 'Nuclear Physics', 'Kenneth Krane', 'PHYS', 720.00, 'Issued');
+
+Creating Users Table:
+
+INSERT INTO Users (UserID, Name, Department, Contact) VALUES 
+(1, 'Ananya Sharma', 'CSE', '9876543210'),
+(2, 'Ravi Kumar', 'ECE', '9876543211'),
+(3, 'Sneha Reddy', 'CIVIL', '9876543212'),
+(4, 'Vikram Joshi', 'MECH', '9876543213'),
+(5, 'Pooja Nair', 'EEE', '9876543214'),
+(6, 'Arjun Mehta', 'CSE', '9876543215'),
+(7, 'Neha Singh', 'BIO', '9876543216'),
+(8, 'Manoj Patel', 'CIVIL', '9876543217'),
+(9, 'Divya Kapoor', 'CHEM', '9876543218'),
+(10, 'Karthik Rao', 'PHYS', '9876543219'),
+(11, 'Priya Das', 'CSE', '9876543220'),
+(12, 'Suresh Babu', 'ECE', '9876543221'),
+(13, 'Meena Iyer', 'EEE', '9876543222'),
+(14, 'Alok Verma', 'MECH', '9876543223'),
+(15, 'Latha S.', 'BIO', '9876543224'),
+(16, 'Harish Malhotra', 'CSE', '9876543225'),
+(17, 'Tanvi Menon', 'CHEM', '9876543226'),
+(18, 'Rahul Bhatt', 'PHYS', '9876543227'),
+(19, 'Deepa Rajan', 'EEE', '9876543228'),
+(20, 'Sanjay Pillai', 'CIVIL', '9876543229'),
+(21, 'Amit Kaul', 'CSE', '9876543230'),
+(22, 'Nisha R.', 'ECE', '9876543231'),
+(23, 'Sameer Khan', 'MECH', '9876543232'),
+(24, 'Vidya V.', 'BIO', '9876543233'),
+(25, 'Gopal Iyer', 'CHEM', '9876543234'),
+(26, 'Shreya Dutta', 'PHYS', '9876543235'),
+(27, 'Rajiv Nair', 'EEE', '9876543236'),
+(28, 'Keerthi R.', 'CIVIL', '9876543237'),
+(29, 'Ajay S.', 'CSE', '9876543238'),
+(30, 'Bhavana J.', 'ECE', '9876543239'),
+(31, 'Umesh R.', 'MECH', '9876543240'),
+(32, 'Ritika Sen', 'BIO', '9876543241'),
+(33, 'Satish K.', 'CHEM', '9876543242'),
+(34, 'Tina George', 'PHYS', '9876543243'),
+(35, 'Dhruv Reddy', 'EEE', '9876543244'),
+(36, 'Chitra V.', 'CIVIL', '9876543245'),
+(37, 'Mohan A.', 'CSE', '9876543246'),
+(38, 'Lavanya D.', 'ECE', '9876543247'),
+(39, 'Ashok B.', 'MECH', '9876543248'),
+(40, 'Sana Shaikh', 'BIO', '9876543249'),
+(41, 'Ishaan Roy', 'CHEM', '9876543250'),
+(42, 'Yamini K.', 'PHYS', '9876543251'),
+(43, 'Pankaj T.', 'EEE', '9876543252'),
+(44, 'Neeraj M.', 'CIVIL', '9876543253'),
+(45, 'Roshni P.', 'CSE', '9876543254'),
+(46, 'Jeevan L.', 'ECE', '9876543255'),
+(47, 'Aishwarya K.', 'MECH', '9876543256'),
+(48, 'Vivek Das', 'BIO', '9876543257'),
+(49, 'Rekha G.', 'CHEM', '9876543258'),
+(50, 'Siddharth R.', 'PHYS', '9876543259');
+
+Creating A Issure return table:
+
+INSERT INTO IssueReturn (IssueID, BookID, UserID, IssueDate, DueDate, ReturnDate, Fine) VALUES 
+(1, 3, 6, '2025-06-01', '2025-06-16', '2025-06-14', 0.00),
+(2, 7, 11, '2025-06-03', '2025-06-18', '2025-06-20', 5.00),
+(3, 15, 2, '2025-05-28', '2025-06-12', '2025-06-10', 0.00),
+(4, 19, 5, '2025-06-05', '2025-06-20', '2025-06-23', 7.50),
+(5, 26, 4, '2025-06-10', '2025-06-25', '2025-06-24', 0.00),
+(6, 31, 8, '2025-06-08', '2025-06-23', '2025-06-30', 17.50),
+(7, 35, 14, '2025-06-02', '2025-06-17', '2025-06-18', 2.50),
+(8, 41, 17, '2025-06-01', '2025-06-16', '2025-06-15', 0.00),
+(9, 44, 20, '2025-06-04', '2025-06-19', '2025-06-25', 15.00),
+(10, 48, 10, '2025-05-30', '2025-06-14', '2025-06-18', 10.00),
+(11, 5, 21, '2025-06-06', '2025-06-21', '2025-06-20', 0.00),
+(12, 11, 12, '2025-06-07', '2025-06-22', '2025-06-29', 17.50),
+(13, 13, 22, '2025-06-10', '2025-06-25', '2025-06-28', 7.50),
+(14, 18, 19, '2025-06-12', '2025-06-27', '2025-06-26', 0.00),
+(15, 22, 23, '2025-06-03', '2025-06-18', '2025-06-21', 7.50),
+(16, 28, 30, '2025-06-11', '2025-06-26', '2025-06-29', 7.50),
+(17, 32, 31, '2025-06-05', '2025-06-20', '2025-06-17', 0.00),
+(18, 37, 7, '2025-06-06', '2025-06-21', '2025-06-21', 0.00),
+(19, 38, 35, '2025-06-08', '2025-06-23', '2025-06-25', 5.00),
+(20, 43, 9, '2025-06-13', '2025-06-28', '2025-06-30', 5.00),
+(21, 45, 18, '2025-06-02', '2025-06-17', '2025-06-22', 12.50),
+(22, 2, 13, '2025-06-04', '2025-06-19', '2025-06-24', 12.50),
+(23, 10, 27, '2025-06-09', '2025-06-24', '2025-06-30', 15.00),
+(24, 17, 34, '2025-06-06', '2025-06-21', '2025-06-19', 0.00),
+(25, 20, 3, '2025-06-12', '2025-06-27', '2025-06-29', 5.00),
+(26, 24, 16, '2025-06-05', '2025-06-20', '2025-06-15', 0.00),
+(27, 30, 25, '2025-06-11', '2025-06-26', '2025-07-02', 15.00),
+(28, 34, 36, '2025-06-07', '2025-06-22', '2025-06-22', 0.00),
+(29, 40, 41, '2025-06-03', '2025-06-18', '2025-06-18', 0.00),
+(30, 47, 50, '2025-06-01', '2025-06-16', '2025-06-20', 10.00);
+
+
+
+use library;
+select * from books;
+select * from issuereturn;
+select * from users;
+
+-- List All Available Books
+SELECT * FROM Books WHERE Status = 'Available';
+
+-- Average, Min, Max Price per Category
+SELECT Category, 
+       AVG(Price) AS AvgPrice, 
+       MIN(Price) AS MinPrice, 
+       MAX(Price) AS MaxPrice
+FROM Books
+GROUP BY Category;
+
+-- List Books Issued by a Particular User
+SELECT U.Name, B.Title, IR.IssueDate, IR.DueDate
+FROM IssueReturn IR
+JOIN Users U ON IR.UserID = U.UserID
+JOIN Books B ON IR.BookID = B.BookID
+WHERE U.Name = 'ravi kumar';
+
+-- Number of Books Issued in Last 30 Days
+SELECT COUNT(*) AS TotalIssued
+FROM IssueReturn
+WHERE IssueDate >= CURDATE() - INTERVAL 30 DAY;
+
+-- Update Book Status on Issue/Return
+UPDATE Books SET Status = 'Issued' WHERE BookID = 4;
+
+-- Find Most Expensive Book per Category
+SELECT Category, Title, Price
+FROM Books B
+WHERE Price = (
+    SELECT MAX(Price)
+    FROM Books
+    WHERE Category = B.Category
+);
+
+--  Optional View (All Issued Books Summary)
+CREATE VIEW IssuedBooksSummary AS
+SELECT B.Title, U.Name AS IssuedTo, IR.IssueDate, IR.DueDate
+FROM IssueReturn IR
+JOIN Books B ON IR.BookID = B.BookID
+JOIN Users U ON IR.UserID = U.UserID
+WHERE B.Status = 'Issued';

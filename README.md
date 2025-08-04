@@ -35,6 +35,9 @@ This project is part of a data analyst training initiative and aims to provide h
 - 📌 Fine calculation based on delay
 - 📌 Generate reports on most issued books, overdue returns, etc.
 
+## ER Diagram - Library Management Subsystem
+![image alt](https://github.com/MithinRC/Library-Management-Subsystem/blob/73fc411703694a8369a5a2f88b2ed2a5d6fca364/Screenshot%202025-08-04%20134911.png)
+
 ## How to use
 - Clone the repository or download it
 - Use the queries to extract the data
